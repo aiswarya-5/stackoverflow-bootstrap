@@ -10,19 +10,19 @@
 	        <script src="js/bootstrap.js"></script>
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-sm bg-light navbar-light py-0">
+		<nav class="navbar navbar-expand-sm navbar-fixed-top bg-light navbar-light py-0">
 		        <div class="container-fluid ps-0">
 		                <a class="navbar-brand py-0" href="#"><img id="stack" src="images/stack.jpg" alt="ImageHere"></a>
         		        <a class="navbar-brand pt-0 me-0" href="#"><span class="product ms-1">Products</span></a>
                 		<a class="navbar-brand opacity-50 z-index-n1 align-top ms-1" href="#">
-  	                		<img class="search position-absolute" src="images/search.jpg" alt="ImageHere">
+  	                		<img class="search position-absolute ms-4" src="images/search.jpg" alt="ImageHere">
 	               		</a>
-        	        	<input type="text" class="form-control input-sm py-1" placeholder="user:22656">
+        	        	<input type="text" class="form-control input-sm py-1" value="user:22656">
                 	    	<div class="rightpart d-inline-flex p-2">
                         		<img src="images/aiswarya.png" alt="ImageHere">
-					<span class="data">1</span>	
+					<span class="data mt-1 ps-1">1</span>	
 	                        	<a class="circle" href="#"></a>
-        	                	<span class="cdata">1</span>								
+        	                	<span class="cdata pt-1 ps-1">1</span>								
                 	    	</div>                 
                     		<a class="navbar-brand py-0 ms-2 me-0" href="#"><img src="images/index.jpg" alt="ImageHere"></a>
 	                    	<a class="navbar-brand py-0 me-0" href="#"><img class="trophy" src="images/trophy.jpg" alt="ImageHere"></a>
@@ -31,5 +31,49 @@
 			</div> 
 			<!-- container-fluid -->
 		</nav>
-    </body>
+		<div class="mainbodycontainer d-flex">
+				<div class="sidebar sticky-top pt-3 mt-1">
+					<p class="home pt-2 ps-2">Home</p>
+					<p class="public pt-2 ps-2 mb-0">PUBLIC</p>
+					<div class="options mt-2">
+						<ul class="mb-0 ps-0">
+          						<li class="one ms-2">
+          							<span class="material-icons"> public </span>
+								<a href="#" class="ps-1">Questions</a>
+ 	         					</li>
+							<li class="two mt-2 ps-4">
+								<a href="#" class="ps-1">Tags</a>
+          						</li>
+							<li class="three mt-1 ps-4">
+          							<a href="#" class="ps-1">Users</a>
+          						</li>
+							<li class="four mt-1 ps-4">
+        	  						<a href="#" class="ps-1">Companies</a>
+          						</li>			
+						</ul>
+					</div>
+					<div class="option">
+						<ul class="mb-0 mt-2 pt-2 ps-2">
+          						<li class="collect">
+								<a href="#">COLLECTIVES</a>
+          							<span class="material-icons ps-3 ms-5"> info </span>
+          						</li>
+							<li class="expo">
+								<img src="images/star.jpg" alt="ImageHere">
+								<a href="#">Explore Collectives</a>
+          						</li>
+							<li class="team mt-4">
+          							<a href="#">TEAMS</a>
+								<span class="material-icons ps-5 ms-5"> info </span>
+          						</li>
+							<li class="free mt-2">
+								<img src="images/free.jpg" alt="ImageHere">
+          							<a href="#">Create free Team</a>
+          						</li>					
+						</ul>
+					</div>	
+				</div>			
+			
+		</div>
+	</body>		
 </html>
