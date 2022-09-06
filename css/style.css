@@ -1,0 +1,49 @@
+*{
+	font-family: segoe ui;
+	margin: 0;
+	padding: 0;	
+}
+.search{
+	top:10px;
+	width: 26px;
+	margin-left:21px;
+}
+
+#stack{
+	width: 158px;
+}
+nav{
+	border-top: 3px solid #f48225;
+	border-bottom: 2px solid #e6e6e6;
+}
+.product{
+	font-size: 13px;
+    color: #7d8388;
+}
+::placeholder{
+	padding-left:20px;
+	font-size:13px;
+}
+.data{
+	padding: 3px 0 0 4.5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.circle {
+    width: 6px;
+    height: 6px;
+    border-radius: 50px;
+    background-color: #d1a684;
+    margin: 9px 1px 1px 8px;
+}
+.cdata{
+	padding: 2.5px 0 0 1.7px;
+    font-size: 12px;
+    color: #c0a38a;
+}
+.trophy{
+	width: 38.5px;
+}
+.list,.help{
+	width: 37px;
+}
