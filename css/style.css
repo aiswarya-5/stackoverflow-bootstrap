@@ -23,6 +23,11 @@ nav {
 	width: 158px;
 }
 
+#stacks {
+	width: 50px;
+	border: none;
+}
+
 .navbar input {
 	padding-left: 30px;
 	font-size: 13px;
@@ -182,6 +187,7 @@ nav {
 	border: 1px solid #818f99;
 	font-family: segoe ui;
 	border-radius: 3px;
+	width: 80px;
 }
 
 .profile-button span {
@@ -292,9 +298,11 @@ nav {
 }
 
 
-/* Layer2 */
-
-
+/* Layer2 
+											
+.card{
+    width: 238px;
+} */
 .title {
 	font-size: 21px;
 }
@@ -305,7 +313,7 @@ nav {
 	padding: 12px 0 0 12px;
 }
 
-.statusdata table img {
+.status img {
 	width: 24.5px;
 }
 
@@ -328,11 +336,7 @@ nav {
 	font-size: 17px;
 }
 
-#reput,
-#reach,
-#ans,
-#ques,
-#over {
+.rep {
 	font-size: 13px;
 	color: #8985a1;
 }
@@ -492,7 +496,7 @@ nav {
 	font-weight: 600;
 }
 
-#bd {
+.bd {
 	color: #5a5c5e;
 	font-size: 12px;
 	vertical-align: baseline;
@@ -512,16 +516,17 @@ nav {
 	background-color: #e3e5e7;
 }
 
-#bd1 {
+.bd1 {
 	font-size: 11px;
 	white-space: nowrap;
 }
 
-#table1 {
+.table1 {
 	line-height: 15px;
 }
 
-.badges #silverimg {
+#silverimg,
+#bronzeimg {
 	width: 62px;
 }
 
@@ -544,6 +549,7 @@ nav {
 	color: #d1a684;
 	font-size: 13px;
 }
+
 
 /*TAGS */
 
@@ -644,89 +650,39 @@ nav {
 /*FOOTER*/
 
 .footer img {
-	width: 53px;
-	padding-top: 12.5px;
-	padding-left: 3px;
+	width: 51px;
 }
 
 .foot_container {
-
-	display: none;
 	Background-color: #242526;
-	display: flex;
-	height: 322px;
-	position: absolute;
-	width: 1263px;
-}
-
-.footer {
-	display: flex;
+	height: auto;
 }
 
 .foot-column {
-	padding-top: 30.5px;
-	margin-left: 20px;
+	flex: 1 0 auto;
 }
 
-.foot-column2 {
-	padding-top: 30.5px;
-	margin-left: 99px;
+.foot-middle {
+	flex: 2 0 auto;
+	flex-wrap: wrap;
 }
 
-.foot-column #head,
-.foot-column2 #head {
+.license {
+	margin: auto;
+}
+
+.foot-column .head {
 	font-size: 13px;
 	font-weight: bold;
 	color: #babfc4;
-	padding-bottom: 15.5px;
 	cursor: pointer;
 }
-
-#subheadl,
-#subheadc,
-#subhead-bus,
-#subhead-data,
-#subhead-terms,
-#subhead,
-#subheadfirst {
+.subhead {
 	font-size: 13px;
 	color: #808b93;
 }
 
-#subhead {
-	padding-bottom: 7.5px;
-}
-
-#subheadfirst {
-	padding-bottom: 8px;
-}
-
-#subheadl {
-	padding-bottom: 7px;
-}
-
-#subhead-bus {
-	padding-bottom: 23.5px;
-}
-
-#subhead-data,
-#subhead-terms,
-#subhead-bus,
-#subheadl {
-	padding-top: 0.5px;
-}
-
-#subhead-terms {
-	padding-bottom: 7.5px;
-}
-
-#subheadl:hover,
-#subheadc:hover,
-#subhead-bus:hover,
-#subhead-data:hover,
-#subhead-terms:hover,
-#subhead:hover,
-#subheadfirst:hover {
+.subhead:hover {
 	cursor: pointer;
 	color: #babfc4;
 }
@@ -736,22 +692,17 @@ nav {
 }
 
 .foot-column3 {
-	padding-top: 34.5px;
-	padding-left: 90.2px;
 	font-size: 11px;
 }
 
 .foot-column3 a {
 	text-decoration: none;
 	color: #94999d;
-	padding-left: 9px;
 }
 
 .license {
 	color: #6b7c86;
 	font-size: 11px;
-	padding-top: 206px;
-	padding-left: 9px
 }
 
 .foot-column3 a:hover {

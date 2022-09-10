@@ -10,19 +10,21 @@
 		<script src="js/bootstrap.js"></script>
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-sm fixed-top bg-light navbar-light py-0">
-			<div class="container-fluid ps-0">
-				<a class="navbar-brand py-0" href="#"><img id="stack" src="images/stack.jpg" alt="ImageHere"></a>
+		<nav class="navbar navbar-expand-lg fixed-top bg-light navbar-light py-0">
+			<div class="container-fluid ps-0 ">
+				<a class="navbar-brand py-0 navbar-brand py-0 me-0" href="#">
+				<img class="collapse navbar-collapse" id="stack" src="images/stack.jpg" alt="ImageHere">
+				<img class="navbar-toggler" data-bs-toggle="collapse" id="stacks" src="images/stacktop.JPG" alt="ImageHere"></a>
 				<a class="navbar-brand pt-0 me-0" href="#"><span class="product ms-1">Products</span></a>
-				<a class="navbar-brand opacity-50 z-index-n1 align-top ms-1" href="#">
-				<img class="search position-absolute ms-4" src="images/search.jpg" alt="ImageHere">
-				</a>
-				<input type="text" class="form-control input-sm py-1" value="user:22656">
+				<div class="form-group col-lg-7 col-md-5 col-sm-2 col-1">
+					<span class="material-icons position-absolute opacity-50 m-1">search</span>
+					<input type="text" class="form-control input-sm"  value="user:22656">
+				</div>
 				<div class="rightpart d-inline-flex p-2">
 					<img src="images/aiswarya.png" alt="ImageHere">
-					<span class="data mt-1 ps-1">1</span>	
-					<a class="circle" href="#"></a>
-					<span class="cdata ps-1 pt-1">1</span>								
+					<span class="data mt-1 ps-1 d-none d-sm-none d-md-block">1</span>	
+					<a class="circle d-none d-sm-none d-md-block" href="#"></a>
+					<span class="cdata ps-1 pt-1 d-none d-sm-none d-md-block">1</span>								
 				</div>
 				<a class="navbar-brand py-0 ms-2 me-0" href="#"><img src="images/index.jpg" alt="ImageHere"></a>
 				<a class="navbar-brand py-0 me-0" href="#"><img class="trophy" src="images/trophy.jpg" alt="ImageHere"></a>
@@ -31,7 +33,7 @@
 			</div>
 			<!-- container-fluid -->
 		</nav>
-		<div class="mainbodycontainer d-flex mt-5">
+		<div class="mainbody container-fluid d-flex mt-5">
 			<div class="sidebar d-none d-sm-none d-md-block sticky-top pt-3 mt-2">
 				<p class="home pt-2 ps-2">Home</p>
 				<p class="public pt-2 ps-2 mb-0">PUBLIC</p>
@@ -59,7 +61,7 @@
 							<span class="material-icons ps-3 ms-5"> info </span>
 						</li>
 						<li class="expo">
-							<img src="images/star.jpg">
+							<img src="images/star.jpg" alt="imagehere">
 							<a href="#">Explore Collectives</a>
 						</li>
 						<li class="team mt-4">
@@ -67,20 +69,25 @@
 							<span class="material-icons ps-5 ms-5"> info </span>
 						</li>
 						<li class="free mt-2">
-							<img src="images/free.jpg">
+							<img src="images/free.jpg" alt="imagehere">
 							<a href="#">Create free Team</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 			<!-- sidebar tag close -->
-			<div class="container-fluid mainbodycontent">
-				<div class="container profilelayer justify-content-between mt-2 d-flex">
-					<div class="layer1-profile row mt-1 d-flex">
-						<div class="p-image col-sm">
-							<img src="images/john.jpeg"> 
+			<div class="container-fluid mainbodycontent position-relative">
+				<div class="container-fluid d-flex flex-column align-items-end profile-button position-absolute mt-4">  
+					<button class="profile p-2">Profiles
+					<span class="material-icons">arrow_drop_down</span>
+					</button>
+				</div>
+				<div class="profilelayer justify-content-between mt-2 d-flex">
+					<div class="layer1-profile mt-1 d-md-flex d-sm-block">
+						<div class="p-image">
+							<img src="images/john.jpeg" alt="image-here"> 
 						</div>
-						<div class="p-right col-sm">
+						<div class="p-right">
 							<ul class="ps-3 pt-2">
 								<li class="name">
 									Jon Skeet 
@@ -92,9 +99,9 @@
 									<span class="data4"> Last seen this week </span>
 								</li>
 								<li class="day2">
-									<img src="images/twiter.jpg" class="twiter">
-									<img src="images/git.jpg" class="git">
-									<img src="images/pin.jpg" class="pin">
+									<img src="images/twiter.jpg" class="twiter" alt="imagehere">
+									<img src="images/git.jpg" class="git" alt="imagehere">
+									<img src="images/pin.jpg" class="pin" alt="imagehere">
 									<span class="data2">csharpindepth.com</span>
 									<span class="material-icons"> place </span>
 									<span class="data3"> Reading, United Kingdom </span>
@@ -104,69 +111,74 @@
 						<!-- p-right-->	
 					</div>
 					<!-- layer1-profile-->
-					<div class="profile-button">  
-						<button class="profile p-2">Profiles
-						<span class="material-icons">arrow_drop_down</span>
-						</button>
-					</div>
-					<!--PROFILE BUTTON-->
 				</div>
+				<!--PROFILE BUTTON-->
 				<!--CONTAINER PROFILE LAYER-->
-				<div class="container pa-button mt-2 pt-2">
+				<div class="container p-sm-0 ms-sm-0 pa-button mt-2 pt-2">
 					<button class="profilebut">Profile</button>
 					<button class="activitybut">Activity</button>
 				</div>
-				<div class="layer2 row mt-3 ms-2 d-flex">
-					<div class="sublayer1 col-sm">
+				<div class="layer2 mt-3 ms-2 d-md-flex d-sm-block">
+					<div class="sublayer1">
 						<div class="status">
 							<span class="title">Stats</span>
-							<div class="statusdata mt-1 ms-1 me-4 pe-5">
-								<table>
-									<tr id="stat-box">
-										<td id="no1">1,353,992</td>
-										<td id="no2" class="ps-5">367.7m</td>
-									</tr>
-									<tr id="stat-box">
-										<td id="reput">reputation</td>
-										<td id="reach" class="ps-5">reached</td>
-									</tr>
-									<tr id="stat-box2">
-										<td id="no3" class="pt-4">35,482</td>
-										<td id="no4" class="pt-4 ps-5">51</th>
-									</tr>
-									<tr id="stat-box2">
-										<td id="ans">answers</td>
-										<td id="ques" class="ps-5">questions</td>
-									</tr>
-									<tr id="stat-trophy">
-										<td colspan=2 class="pt-3">
-											<img src="images/btrophy.jpg">
-											<p id="over">top <b>0.01% </b>overall</p>
-										</td>
-									</tr>
-								</table>
+							<div class="container ps-0 mt-3">
+								<div class="card">
+									<div class="status p-md-0 p-lg-1 me-5 card-body d-sm-flex d-md-block">
+										<div class="d-flex">
+											<div class="m-2">
+												<span>1,353,992</span>
+												<div class="rep">reputation</div>
+											</div>
+											<div class="m-2 ms-lg-5">
+												<span>362.1m</span>
+												<div class="rep">reached</div>
+											</div>
+										</div>
+										<div class="d-flex">
+											<div class="m-2">
+												<span>35,451</span>
+												<div class="rep">answers</div>
+											</div>
+											<div class="m-2 ms-lg-5 ps-lg-4">
+												<span>51</span>
+												<div class="rep">question</div>
+											</div>
+										</div>
+										<div class="d-flex">
+											<div class="m-2">
+												<img src="images/btrophy.jpg" alt="imagehere">
+												<div class="rep">top <b>0.01% </b>overall</div>
+											</div>
+										</div>
+									</div>
+									<!--card-body-->
+								</div>
+								<!--card-->
 							</div>
-							<!--statusdata-->
+							<!--container-->
 						</div>
 						<!--status-->
 						<div class="collective ms-1 mt-1 pt-3">
 							<span class="title">Collectives</span>
 							<div class="collectives mt-2 pt-2 pb-2 me-2">
 								<table>
-									<tr>
-										<td rowspan=2 id="cloud"><img src="images/cloud.jpg" class="mt-1 ms-2"></td>
-										<td id="google" class="pt-2 ps-2">
-											Google Cloud
-											<p id="year">2021 <img src="images/dot.png">Employee</p>
-										</td>
-									</tr>
+									<tbody>
+										<tr>
+											<td rowspan=2 id="cloud"><img src="images/cloud.jpg" alt="imagehere" class="mt-1 ms-2"></td>
+											<td id="google" class="pt-2 ps-2">
+												Google Cloud
+												<p id="year">2021 <img src="images/dot.png" alt="imagehere">Employee</p>
+											</td>
+										</tr>
+									</tbody>
 								</table>
 							</div>
 						</div>
 						<!--collective-->
 					</div>
 					<!--sublayer1-->
-					<div class="sublayer2 col-sm">
+					<div class="sublayer2">
 						<div class="about ps-2">
 							<p class="abouttitle mb-1">About</p>
 							<p class="line1 mb-0">Author of <a href="#">C# in Depth</a>.</p>
@@ -186,35 +198,36 @@
 					<!--sublayer2-->
 				</div>
 				<!-- layer2-->	
-				<div class="layer3 mt-3 ms-2 ps-1 d-flex row">
-					<div class="community col-sm">
-						<span class="communitytitle">Communities</span>
-						<span class="view ps-4">View all
-						<img src="images/new.jpg"></span>		
+				<div class="container-fluid layer3 d-md-flex d-sm-block">
+					<div class="community">
+						<div class="badgeheadline d-flex justify-content-between">					
+							<span class="badgetitle">Communities</span>
+							<span class="bronze view pt-2"> View all <img src="images/new.jpg" alt="imagehere"></span>
+						</div>
 						<div class="communitybox mt-2 pt-3 pe-3 pb-2">
 							<table>
 								<tr>
-									<td id="stackoverflow"><img src="images/so.jpg"> </td>
+									<td id="stackoverflow"><img src="images/so.jpg" alt="imagehere"> </td>
 									<td id="stackoverflow1">Stack Overflow</td>
 									<td id="stackoverflow2" class="ps-5">1.3m</td>
 								</tr>
 								<tr>
-									<td id="meta"><img src="images/meta.jpg"> </td>
+									<td id="meta"><img src="images/meta.jpg" alt="imagehere"> </td>
 									<td id="meta1">Meta Stack Exchange</td>
 									<td id="meta2" class="ps-5">92.7k</td>
 								</tr>
 								<tr>
-									<td id="super"><img src="images/super.jpg"></td>
+									<td id="super"><img src="images/super.jpg" alt="imagehere"></td>
 									<td id="super1"> Super User</td>
-									<td id="super2" class="ps-5">5.1k</th>
+									<td id="super2" class="ps-5">5.1k</td>
 								</tr>
 								<tr>
-									<td id="server"><img src="images/server.jpg"></td>
+									<td id="server"><img src="images/server.jpg" alt="imagehere"></td>
 									<td  id="server1">Server Fault</td>
 									<td id="server2" class="ps-5">4.7k</td>
 								</tr>
 								<tr>
-									<td id="sw"><img src="images/sw.jpg"></td>
+									<td id="sw"><img src="images/sw.jpg" alt="imagehere"></td>
 									<td  id="sw1">Software Engineering</td>
 									<td id="sw2" class="ps-5">3.4k</td>
 								</tr>
@@ -223,24 +236,24 @@
 						<!-- box-->
 					</div>
 					<!--community-->
-					<div class="AllContents ms-4-lg row">
+					<div class="AllContents ms-4-lg">
 						<div class="badgeheadline d-flex justify-content-between">					
 							<span class="badgetitle">Badges</span>
 							<span class="bronze"> View all badges</span>
 						</div>
-						<div class="badgeboxs d-flex my-2 row">
-							<div class="badges">
+						<div class="badgeboxs d-md-flex d-sm-block my-2">
+							<div class="badges col ms-lg-4">
 								<div class="badgedatas py-2 ps-2">
-									<table id="table1">
+									<table class="table1">
 										<tr>
-											<td rowspan="2" colspan="2"><img src="images/gold.jpg" id="goldimg"></td>
+											<td rowspan="2" colspan="2"><img src="images/gold.jpg" alt="imagehere" id="goldimg"></td>
 											<td id="num-g" class="pt-1">824</td>
 										</tr>
 										<tr>
-											<td id="bd"> gold badgess</td>
+											<td class="bd"> gold badgess</td>
 										</tr>
 									</table>
-									<table id="table2">
+									<table>
 										<tr>
 											<td>
 												<div class="badgebutton ps-2 mt-2 ms-1 pb-1">
@@ -248,7 +261,7 @@
 													<span  class="ps-1">delegates</span>
 												</div>
 											</td>
-											<td id="bd1" class="px-5">Apr 6, 2011</td>
+											<td class="bd1 px-5">Apr 6, 2011</td>
 										</tr>
 										<tr>
 											<td>
@@ -257,7 +270,7 @@
 													<span class="ps-1">inheritance</span>
 												</div>
 											</td>
-											<td id="bd1" class="px-5">Nov 12, 2011</td>
+											<td class="bd1 px-5">Nov 12, 2011</td>
 										</tr>
 										<tr>
 											<td>
@@ -266,27 +279,27 @@
 													<span class="ps-1">casting</span>
 												</div>
 											</td>
-											<td id="bd1" class="px-5">Mar 1, 2012</td>
+											<td class="bd1 px-5">Mar 1, 2012</td>
 										</tr>
 									</table>
 								</div>
 								<!--badgesdatas-->
 							</div>
 							<!--badges-->	
-							<div class="badges ms-4">
+							<div class="badges col ms-lg-4">
 								<div class="silver py-2 ps-2">
-									<table id="table1">
+									<table class="table1">
 										<tr>
 											<td rowspan="2" colspan="2">
-												<img src="images/silver.jpg" id="silverimg">
+												<img src="images/silver.jpg" id="silverimg" alt="imagehere">
 											</td>
 											<td id="num-s" class="pt-1">8,939</td>
 										</tr>
 										<tr>
-											<td id="bd"> silver badgess</td>
+											<td class="bd"> silver badgess</td>
 										</tr>
 									</table>
-									<table id="table2">
+									<table>
 										<tr>
 											<td>
 												<div class="badgebutton ps-2 mt-2 ms-1 pb-1">
@@ -294,7 +307,7 @@
 													<span class="ps-1">expression</span>
 												</div>
 											</td>
-											<td id="bd1" class="px-5">Mar 12, 2020</td>
+											<td class="bd1 px-5">Mar 12, 2020</td>
 										</tr>
 										<tr>
 											<td>
@@ -303,7 +316,7 @@
 													<span class="ps-1">conversion</span>
 												</div>
 											</td>
-											<td id="bd1" class="px-5">Nov 4, 2013</td>
+											<td class="bd1 px-5">Nov 4, 2013</td>
 										</tr>
 										<tr>
 											<td>
@@ -312,27 +325,27 @@
 													<span class="ps-1">bytearray</span>
 												</div>
 											</td>
-											<td id="bd1" class="px-5">Jun 5, 2013</td>
+											<td class="bd1 px-5">Jun 5, 2013</td>
 										</tr>
 									</table>
 								</div>
 								<!--badgesdatas-->
 							</div>
 							<!--badges-->
-							<div class="badges ms-4">
-								<div class="bronzedata py-2 ps-2">
-									<table id="table1">
+							<div class="badges col ms-lg-4">
+								<div class="bronzedata py- ps-2">
+									<table class="table1">
 										<tr>
 											<td rowspan="2" colspan="2">
-												<img src="images/bronze.jpg" id="silverimg">
+												<img src="images/bronze.jpg" alt="imagehere" id="bronzeimg">
 											</td>
 											<td id="num-b" class="pt-1">8,939</td>
 										</tr>
 										<tr>
-											<td id="bd"> bronze badges</td>
+											<td class="bd"> bronze badges</td>
 										</tr>
 									</table>
-									<table id="table2">
+									<table>
 										<tr>
 											<td>
 												<div class="badgebutton ps-2 mt-2 ms-1 pb-1">
@@ -340,7 +353,7 @@
 													<span class="ps-1">generic</span>
 												</div>
 											</td>
-											<td id="bd1" class="px-5">Sep 16, 2011</td>
+											<td class="bd1 px-5">Sep 16, 2011</td>
 										</tr>
 										<tr>
 											<td>
@@ -349,7 +362,7 @@
 													<span class="ps-1">anonymous</span>
 												</div>
 											</td>
-											<td id="bd1" class="px-5">Sep 23, 2012</td>
+											<td class="bd1 px-5">Sep 23, 2012</td>
 										</tr>
 										<tr>
 											<td>
@@ -358,7 +371,7 @@
 													<span class="ps-1">keyword</span>
 												</div>
 											</td>
-											<td id="bd1" class="px-5">Mar 5, 2013</td>
+											<td class="bd1 px-5">Mar 5, 2013</td>
 										</tr>
 									</table>
 								</div>
@@ -521,7 +534,7 @@
 						<div class="tag container-fluid p-0 mx-0 my-2">
 							<div class="tags d-flex justify-content-between ps-3 pt-3 pb-2">
 								<div class="post">
-									<img src="images/green.jpg">
+									<img src="images/green.jpg" alt="imagehere">
 									<button class="ms-2 p-1">11622</button>
 									<span class="question">Why is subtracting these two times (in 1927) giving a strange result?</span>
 								</div>
@@ -532,7 +545,7 @@
 							<!--post1-->
 							<div class="tags d-flex justify-content-between ps-3 py-2">
 								<div class="post">
-									<img src="images/green.jpg">
+									<img src="images/green.jpg" alt="imagehere">
 									<button class="ms-2 p-1">11622</button>
 									<span class="question">Why is subtracting these two times (in 1927) giving a strange result?</span>
 								</div>
@@ -543,7 +556,7 @@
 							<!--post1-->
 							<div class="tags d-flex justify-content-between ps-3 py-2">
 								<div class="post">
-									<img src="images/green.jpg">
+									<img src="images/green.jpg" alt="imagehere">
 									<button class="ms-2 p-1">11622</button>
 									<span class="question">Why is subtracting these two times (in 1927) giving a strange result?</span>
 								</div>
@@ -554,7 +567,7 @@
 							<!--post1-->
 							<div class="tags d-flex justify-content-between ps-3 py-2">
 								<div class="post">
-									<img src="images/green.jpg">
+									<img src="images/green.jpg" alt="imagehere">
 									<button class="ms-2 p-1">11622</button>
 									<span class="question">Why is subtracting these two times (in 1927) giving a strange result?</span>
 								</div>
@@ -565,7 +578,7 @@
 							<!--post1-->
 							<div class="tags d-flex justify-content-between ps-3 py-2">
 								<div class="post">
-									<img src="images/green.jpg">
+									<img src="images/green.jpg" alt="imagehere">
 									<button class="ms-2 p-1">11622</button>
 									<span class="question">Why is subtracting these two times (in 1927) giving a strange result?</span>
 								</div>
@@ -576,7 +589,7 @@
 							<!--post1-->
 							<div class="tags d-flex justify-content-between ps-3 py-2">
 								<div class="post">
-									<img src="images/green.jpg">
+									<img src="images/green.jpg" alt="imagehere">
 									<button class="ms-2 p-1">11622</button>
 									<span class="question">Why is subtracting these two times (in 1927) giving a strange result?</span>
 								</div>
@@ -587,7 +600,7 @@
 							<!--post1-->
 							<div class="tags d-flex justify-content-between ps-3 py-2">
 								<div class="post">
-									<img src="images/green.jpg">
+									<img src="images/green.jpg" alt="imagehere">
 									<button class="ms-2 p-1">11622</button>
 									<span class="question">Why is subtracting these two times (in 1927) giving a strange result?</span>
 								</div>
@@ -598,7 +611,7 @@
 							<!--post1-->
 							<div class="tags d-flex justify-content-between ps-3 py-2">
 								<div class="post">
-									<img src="images/green.jpg">
+									<img src="images/green.jpg" alt="imagehere">
 									<button class="ms-2 p-1">11622</button>
 									<span class="question">Why is subtracting these two times (in 1927) giving a strange result?</span>
 								</div>
@@ -609,7 +622,7 @@
 							<!--post1-->
 							<div class="tags d-flex justify-content-between ps-3 py-2">
 								<div class="post">
-									<img src="images/green.jpg">
+									<img src="images/green.jpg" alt="imagehere">
 									<button class="ms-2 p-1">11622</button>
 									<span class="question">Why is subtracting these two times (in 1927) giving a strange result?</span>
 								</div>
@@ -620,7 +633,7 @@
 							<!--post1-->
 							<div class="tags d-flex justify-content-between ps-3 py-2">
 								<div class="post">
-									<img src="images/green.jpg">
+									<img src="images/green.jpg" alt="imagehere">
 									<button class="ms-2 p-1">11622</button>
 									<span class="question">Why is subtracting these two times (in 1927) giving a strange result?</span>
 								</div>
@@ -633,14 +646,14 @@
 						<div class="badgeheadline d-flex justify-content-between">					
 							<span class="badgetitle">Top Meta posts</span>
 							<span class="meta">
-							<img src="images/q.jpg"><span>3</span>
-							<img src="images/a.jpg"><span>22</span>
+							<img src="images/q.jpg" alt="imagehere"><span>3</span>
+							<img src="images/a.jpg" alt="imagehere"><span>22</span>
 							</span>
 						</div>
 						<div class="tag container-fluid p-0 mx-0 my-2">
 							<div class="tags d-flex ps-3 pt-3 pb-2">
 								<div class="meta">
-									<img src="images/stackg.jpg">
+									<img src="images/stackg.jpg" alt="imagehere">
 									<button class="ms-2 p-1">11622</button>
 									<span class="question">congradulations for reaching a million</span>
 								</div>
@@ -648,7 +661,7 @@
 							<!--meta1-->
 							<div class="tags d-flex ps-3 pt-3 pb-2">
 								<div class="meta">
-									<img src="images/stackg.jpg">
+									<img src="images/stackg.jpg" alt="imagehere">
 									<button class="ms-2 p-1">11622</button>
 									<span class="question">congradulations for reaching a million</span>
 								</div>
@@ -656,7 +669,7 @@
 							<!--meta2-->
 							<div class="tags d-flex ps-3 pt-3 pb-2">
 								<div class="meta">
-									<img src="images/stackg.jpg">
+									<img src="images/stackg.jpg" alt="imagehere">
 									<button class="ms-2 p-1">11622</button>
 									<span class="question">congradulations for reaching a million</span>
 								</div>
@@ -664,7 +677,7 @@
 							<!--meta3-->
 							<div class="tags d-flex ps-3 pt-3 pb-2">
 								<div class="meta">
-									<img src="images/stackg.jpg">
+									<img src="images/stackg.jpg" alt="imagehere">
 									<button class="ms-2 p-1">11622</button>
 									<span class="question">congradulations for reaching a million</span>
 								</div>
@@ -672,7 +685,7 @@
 							<!--meta4-->
 							<div class="tags d-flex ps-3 pt-3 pb-2">
 								<div class="meta">
-									<img src="images/stackg.jpg">
+									<img src="images/stackg.jpg" alt="imagehere">
 									<button class="ms-2 p-1">11622</button>
 									<span class="question">congradulations for reaching a million</span>
 								</div>
@@ -687,7 +700,7 @@
 						<div class="tag container-fluid p-0 mx-0 my-2">
 							<div class="tags d-flex ps-3 pt-3 pb-2">
 								<div class="meta">
-									<img src="images/network1.jpg">
+									<img src="images/network1.jpg" alt="imagehere">
 									<button class="ms-2 p-1">11622</button>
 									<span class="question">congradulations for reaching a million</span>
 								</div>
@@ -695,7 +708,7 @@
 							<!--meta1-->
 							<div class="tags d-flex ps-3 pt-3 pb-2">
 								<div class="meta">
-									<img src="images/network1.jpg">
+									<img src="images/network1.jpg" alt="imagehere">
 									<button class="ms-2 p-1">11622</button>
 									<span class="question">congradulations for reaching a million</span>
 								</div>
@@ -703,7 +716,7 @@
 							<!--meta1-->
 							<div class="tags d-flex ps-3 pt-3 pb-2">
 								<div class="meta">
-									<img src="images/network1.jpg">
+									<img src="images/network1.jpg" alt="imagehere">
 									<button class="ms-2 p-1">11622</button>
 									<span class="question">congradulations for reaching a million</span>
 								</div>
@@ -711,7 +724,7 @@
 							<!--meta1-->
 							<div class="tags d-flex ps-3 pt-3 pb-2">
 								<div class="meta">
-									<img src="images/network2.jpg">
+									<img src="images/network2.jpg" alt="imagehere">
 									<button class="ms-2 p-1">11622</button>
 									<span class="question">congradulations for reaching a million</span>
 								</div>
@@ -719,7 +732,7 @@
 							<!--meta1-->
 							<div class="tags d-flex ps-3 pt-3 pb-2">
 								<div class="meta">
-									<img src="images/network1.jpg">
+									<img src="images/network1.jpg" alt="imagehere">
 									<button class="ms-2 p-1">11622</button>
 									<span class="question">congradulations for reaching a million</span>
 								</div>
@@ -735,63 +748,68 @@
 			<!--MAIN BODY CONTENT-->
 		</div>
 		<!--MAINBODYCONTAINER-->
-		<div class="foot_container"">
-		<div class="footer">
-			<div class="image">
-				<img src="images/fstack.jpg">
-			</div>
-			<div class="foot-column">
-				<ul>
-					<li id="head">STACK OVERFLOW</li>
-					<li id="subheadfirst">Questions</li>
-					<li id="subhead">Help</li>
-				</ul>
-			</div>
-			<div class="foot-column2">
-				<ul>
-					<li id="head">PRODUCTS</li>
-					<li id="subheadfirst">Teams</li>
-					<li id="subhead">Advertising</li>
-					<li id="subhead">Collectives</li>
-					<li id="subheadl">Talent</li>
-				</ul>
-			</div>
-			<div class="foot-column2">
-				<ul>
-					<li id="head">COMPANY</li>
-					<li id="subheadfirst">About</li>
-					<li id="subhead">Press</li>
-					<li id="subhead">Work Here</li>
-					<li id="subheadl">Legal</li>
-					<li id="subhead">Privacy Policy</li>
-					<li id="subhead-terms">Terms of Service</li>
-					<li id="subheadfirst">Contact Us</li>
-					<li id="subhead">Cookie Settings</li>
-					<li id="subhead">Cookie Policy</li>
-				</ul>
-			</div>
-			<div class="foot-column2">
-				<ul>
-					<li id="head">STACK EXCHANGE NETWORK</li>
-					<li id="subheadfirst">Technology</li>
-					<li id="subhead">Culture & recreation</li>
-					<li id="subhead">Life & arts</li>
-					<li id="subheadl">Science</li>
-					<li id="subhead">Professional</li>
-					<li id="subhead-bus">Business</li>
-					<li id="subhead">API</li>
-					<li id="subhead-data">Data</li>
-				</ul>
-			</div>
-			<div class="foot-column3">
-				<a href="#">Blog</a>
-				<a href="#">Facebook</a>
-				<a href="#">Twitter</a>
-				<a href="#">LinkedIn</a>
-				<a href="#">Instagram</a>
-				<div class="license">
-					Site design / logo © 2022 Stack Exchange Inc; user contributions 
-					<p> licensed under cc by-sa. rev 2022.7.1.42502 </p>
+		<div class="foot_container container-fluid">
+			<div class="footer d-lg-flex d-md-block pt-3">
+				<div class="footimage d-none d-sm-none d-md-block">
+					<img src="images/fstack.jpg" alt="imagehere">
+				</div>
+				<div class="foot-middle d-flex justify-content-evently m-3">
+					<div class="foot-column">
+						<h5 class="head pb-2">STACK OVERFLOW</h5>
+						<ul class="ps-0">
+							<li class="subhead pb-1">Questions</li>
+							<li class="subhead pb-1">Help</li>
+						</ul>
+					</div>
+					<div class="foot-column">
+						<h5 class="head pb-2">PRODUCTS</h5>
+						<ul class="ps-0">
+							<li class="subhead pb-1">Teams</li>
+							<li class="subhead pb-1">Advertising</li>
+							<li class="subhead pb-1">Collectives</li>
+							<li class="subhead pb-1">Talent</li>
+						</ul>
+					</div>
+					<div class="foot-column">
+						<h5 class="head pb-2">COMPANY</h5>
+						<ul class="ps-0">
+							<li class="subhead pb-1">About</li>
+							<li class="subhead pb-1">Press</li>
+							<li class="subhead pb-1">Work Here</li>
+							<li class="subhead pb-1">Legal</li>
+							<li class="subhead pb-1">Privacy Policy</li>
+							<li class="subhead pb-1">Terms of Service</li>
+							<li class="subhead pb-1">Contact Us</li>
+							<li class="subhead pb-1">Cookie Settings</li>
+							<li class="subhead pb-1">Cookie Policy</li>
+						</ul>
+					</div>
+					<div class="foot-column">
+						<h5 class="head pb-2">STACK EXCHANGE NETWORK</h5>
+						<ul class="ps-0">
+							<li class="subhead pb-1">Technology</li>
+							<li class="subhead pb-1">Culture & recreation</li>
+							<li class="subhead pb-1">Life & arts</li>
+							<li class="subhead pb-1">Science</li>
+							<li class="subhead pb-1">Professional</li>
+							<li class="subhead pb-3">Business</li>
+							<li class="subhead pb-1">API</li>
+							<li class="subhead pb-1">Data</li>
+						</ul>
+					</div>
+				</div>
+				<div class="mt-4 pt-1">
+					<div class="foot-column3 mb-lg-5 pb-mb-5 pb-lg-5">
+						<a href="#">Blog</a>
+						<a href="#">Facebook</a>
+						<a href="#">Twitter</a>
+						<a href="#">LinkedIn</a>
+						<a href="#">Instagram</a>
+					</div>
+					<div class="license mt-mb-5 pt-mb-5 pt-lg-5 mt-lg-5">
+						Site design / logo © 2022 Stack Exchange Inc; user contributions 
+						<p> licensed under cc by-sa. rev 2022.7.1.42502 </p>
+					</div>
 				</div>
 			</div>
 		</div>
