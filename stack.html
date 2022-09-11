@@ -114,7 +114,7 @@
 				</div>
 				<!--PROFILE BUTTON-->
 				<!--CONTAINER PROFILE LAYER-->
-				<div class="container p-sm-0 ms-sm-0 pa-button mt-2 pt-2">
+				<div class="container p-sm-0 p-md-2 ms-sm-0 pa-button mt-2 pt-2">
 					<button class="profilebut">Profile</button>
 					<button class="activitybut">Activity</button>
 				</div>
@@ -122,7 +122,7 @@
 					<div class="sublayer1">
 						<div class="status">
 							<span class="title">Stats</span>
-							<div class="container ps-0 mt-3">
+							<div class="container ms-sm-0 ps-0 mt-3">
 								<div class="card">
 									<div class="status p-md-0 p-lg-1 me-5 card-body d-sm-flex d-md-block">
 										<div class="d-flex">
@@ -159,16 +159,16 @@
 							<!--container-->
 						</div>
 						<!--status-->
-						<div class="collective ms-1 mt-1 pt-3">
+						<div class="collective ms-1 d-sm-none d-md-none d-lg-block mt-1 pt-3">
 							<span class="title">Collectives</span>
 							<div class="collectives mt-2 pt-2 pb-2 me-2">
 								<table>
 									<tbody>
 										<tr>
-											<td rowspan=2 id="cloud"><img src="images/cloud.jpg" alt="imagehere" class="mt-1 ms-2"></td>
-											<td id="google" class="pt-2 ps-2">
+											<td rowspan="2" class="cloud"><img src="images/cloud.jpg" alt="imagehere" class="mt-1 ms-2"></td>
+											<td class="google pt-2 ps-2">
 												Google Cloud
-												<p id="year">2021 <img src="images/dot.png" alt="imagehere">Employee</p>
+												<p class="year">2021 <img src="images/dot.png" alt="imagehere">Employee</p>
 											</td>
 										</tr>
 									</tbody>
@@ -199,7 +199,7 @@
 				</div>
 				<!-- layer2-->	
 				<div class="container-fluid layer3 d-md-flex d-sm-block">
-					<div class="community">
+					<div class="community d-sm-none d-md-none d-lg-block ">
 						<div class="badgeheadline d-flex justify-content-between">					
 							<span class="badgetitle">Communities</span>
 							<span class="bronze view pt-2"> View all <img src="images/new.jpg" alt="imagehere"></span>
@@ -207,41 +207,41 @@
 						<div class="communitybox mt-2 pt-3 pe-3 pb-2">
 							<table>
 								<tr>
-									<td id="stackoverflow"><img src="images/so.jpg" alt="imagehere"> </td>
-									<td id="stackoverflow1">Stack Overflow</td>
-									<td id="stackoverflow2" class="ps-5">1.3m</td>
+									<td class="stackoverflow"><img src="images/so.jpg" alt="imagehere"> </td>
+									<td class="meta1">Stack Overflow</td>
+									<td class="ps-5 meta2">1.3m</td>
 								</tr>
 								<tr>
-									<td id="meta"><img src="images/meta.jpg" alt="imagehere"> </td>
-									<td id="meta1">Meta Stack Exchange</td>
-									<td id="meta2" class="ps-5">92.7k</td>
+									<td class="meta"><img src="images/meta.jpg" alt="imagehere"> </td>
+									<td class="meta1">Meta Stack Exchange</td>
+									<td class="ps-5 meta2">92.7k</td>
 								</tr>
 								<tr>
-									<td id="super"><img src="images/super.jpg" alt="imagehere"></td>
-									<td id="super1"> Super User</td>
-									<td id="super2" class="ps-5">5.1k</td>
+									<td class="super"><img src="images/super.jpg" alt="imagehere"></td>
+									<td class="meta1"> Super User</td>
+									<td class="ps-5 meta2">5.1k</td>
 								</tr>
 								<tr>
-									<td id="server"><img src="images/server.jpg" alt="imagehere"></td>
-									<td  id="server1">Server Fault</td>
-									<td id="server2" class="ps-5">4.7k</td>
+									<td class="server"><img src="images/server.jpg" alt="imagehere"></td>
+									<td class="meta1">Server Fault</td>
+									<td class="ps-5 meta2">4.7k</td>
 								</tr>
 								<tr>
-									<td id="sw"><img src="images/sw.jpg" alt="imagehere"></td>
-									<td  id="sw1">Software Engineering</td>
-									<td id="sw2" class="ps-5">3.4k</td>
+									<td class="sw"><img src="images/sw.jpg" alt="imagehere"></td>
+									<td class="meta1">Software Engineering</td>
+									<td class="ps-5 meta2">3.4k</td>
 								</tr>
 							</table>
 						</div>
 						<!-- box-->
 					</div>
 					<!--community-->
-					<div class="AllContents ms-4-lg">
+					<div class="AllContents ms-lg-4">
 						<div class="badgeheadline d-flex justify-content-between">					
 							<span class="badgetitle">Badges</span>
 							<span class="bronze"> View all badges</span>
 						</div>
-						<div class="badgeboxs d-md-flex d-sm-block my-2">
+						<div class="badgeboxs row my-2">
 							<div class="badges col ms-lg-4">
 								<div class="badgedatas py-2 ps-2">
 									<table class="table1">
@@ -333,7 +333,7 @@
 							</div>
 							<!--badges-->
 							<div class="badges col ms-lg-4">
-								<div class="bronzedata py- ps-2">
+								<div class="bronzedata py-2 ps-2">
 									<table class="table1">
 										<tr>
 											<td rowspan="2" colspan="2">
@@ -380,12 +380,12 @@
 							<!--badges-->
 						</div>
 						<!--badgesbox-->
-						<div class="badgeheadline d-flex justify-content-between">					
+						<div class="badgeheadline d-flex justify-content-between my-3">					
 							<span class="badgetitle">Top tags</span>
 							<span class="bronze"> View all tags</span>
 						</div>
 						<div class="tag container-fluid p-0 mx-0 my-2">
-							<div class="tags d-flex justify-content-between ps-3 py-2">
+							<div class="tags d-md-flex d-sm-block justify-content-between ps-3 py-2">
 								<div class="subject">
 									<button>c#</button> 
 									<span class="dot ps-2">●</span>
@@ -406,7 +406,7 @@
 								</div>
 							</div>
 							<!--tag1-->
-							<div class="tags d-flex justify-content-between ps-3 py-2">
+							<div class="tags d-md-flex d-sm-block justify-content-between ps-3 py-2">
 								<div class="subject">
 									<button>java</button> 
 									<span class="dot ps-2">●</span>
@@ -427,7 +427,7 @@
 								</div>
 							</div>
 							<!--tag2-->
-							<div class="tags d-flex justify-content-between ps-3 py-2">
+							<div class="tags d-md-flex d-sm-block justify-content-between ps-3 py-2">
 								<div class="subject">
 									<button>net</button> 
 									<span class="dot ps-2">●</span>
@@ -448,7 +448,7 @@
 								</div>
 							</div>
 							<!--tag3-->
-							<div class="tags d-flex justify-content-between ps-3 py-2">
+							<div class="tags d-md-flex d-sm-block justify-content-between ps-3 py-2">
 								<div class="subject">
 									<button>linq</button> 
 									<span class="dot ps-2">●</span>
@@ -469,7 +469,7 @@
 								</div>
 							</div>
 							<!--tag4-->
-							<div class="tags d-flex justify-content-between ps-3 py-2">
+							<div class="tags d-md-flex d-sm-block justify-content-between ps-3 py-2">
 								<div class="subject">
 									<button>string</button> 
 									<span class="dot ps-2">●</span>
@@ -490,7 +490,7 @@
 								</div>
 							</div>
 							<!--tag4-->
-							<div class="tags d-flex justify-content-between ps-3 py-2">
+							<div class="tags d-md-flex d-sm-block justify-content-between ps-3 py-2">
 								<div class="subject">
 									<button>generics</button> 
 									<span class="dot ps-2">●</span>
@@ -513,19 +513,19 @@
 							<!--tag4-->
 						</div>
 						<!--Tag Container-->
-						<div class="badgeheadline d-flex justify-content-between">
+						<div class="badgeheadline d-sm-block d-md-flex justify-content-between my-3">
 							<div>
 								<span class="badgetitle">Newest Posts</span>
 								<p class="bronze"> View all <a href="#"> questions</a>, <a href="#">answers</a>, and <a href="#">articles</a></p>
 							</div>
-							<div class="mt-3">
+							<div class="mt-3 p-2">
 								<div class="btn-group btn-group-sm" role="group">
 									<button type="button" class="btn btn-outline-secondary text-dark selectedbtn postbtn">All</button>
 									<button type="button" class="btn btn-outline-secondary postbtn">Questions</button>
 									<button type="button" class="btn btn-outline-secondary postbtn">Answers</button>
 									<button type="button" class="btn btn-outline-secondary postbtn">Article</button>
 								</div>
-								<div class="btn-group btn-group-sm ms-2" role="group">
+								<div class="btn-group btn-group-sm ms-md-2 " role="group">
 									<button type="button" class="btn btn-outline-secondary selectedbtn text-dark postbtn">Score</button>
 									<button type="button" class="btn btn-outline-secondary postbtn">Newest</button>
 								</div>
@@ -533,117 +533,177 @@
 						</div>
 						<div class="tag container-fluid p-0 mx-0 my-2">
 							<div class="tags d-flex justify-content-between ps-3 pt-3 pb-2">
-								<div class="post">
-									<img src="images/green.jpg" alt="imagehere">
-									<button class="ms-2 p-1">11622</button>
-									<span class="question">Why is subtracting these two times (in 1927) giving a strange result?</span>
+								<div class="post d-flex">
+									<div>
+										<img src="images/green.jpg" alt="imagehere">
+									</div>
+									<div>
+										<button class="ms-2 p-1">11622</button>
+									</div>
+									<div class="question ps-2">
+										Why is subtracting these two times (in 1927) giving a strange result?
+									</div>
 								</div>
 								<div class="questiondate me-3">
-									<span>Jul 27,2021</span>
+									<span>Jul 27</span>
 								</div>
 							</div>
 							<!--post1-->
-							<div class="tags d-flex justify-content-between ps-3 py-2">
-								<div class="post">
-									<img src="images/green.jpg" alt="imagehere">
-									<button class="ms-2 p-1">11622</button>
-									<span class="question">Why is subtracting these two times (in 1927) giving a strange result?</span>
+							<div class="tags d-flex justify-content-between ps-3 pt-3 pb-2">
+								<div class="post d-flex">
+									<div>
+										<img src="images/green.jpg" alt="imagehere">
+									</div>
+									<div>
+										<button class="ms-2 p-1">4621</button>
+									</div>
+									<div class="question ps-2">
+										Why is char[] preferred over String for passwords?
+									</div>
 								</div>
 								<div class="questiondate me-3">
-									<span>Jul 27,2021</span>
+									<span>Jan 16</span>
 								</div>
 							</div>
-							<!--post1-->
-							<div class="tags d-flex justify-content-between ps-3 py-2">
-								<div class="post">
-									<img src="images/green.jpg" alt="imagehere">
-									<button class="ms-2 p-1">11622</button>
-									<span class="question">Why is subtracting these two times (in 1927) giving a strange result?</span>
+							<!--post2-->
+							<div class="tags d-flex justify-content-between ps-3 pt-3 pb-2">
+								<div class="post d-flex">
+									<div>
+										<img src="images/gray.jpg" alt="imagehere">
+									</div>
+									<div>
+										<button class="ms-2 p-1">3707</button>
+									</div>
+									<div class="question ps-2">
+										What is the difference between String and string in C#
+									</div>
 								</div>
 								<div class="questiondate me-3">
-									<span>Jul 27,2021</span>
+									<span>Oct 18</span>
 								</div>
 							</div>
-							<!--post1-->
-							<div class="tags d-flex justify-content-between ps-3 py-2">
-								<div class="post">
-									<img src="images/green.jpg" alt="imagehere">
-									<button class="ms-2 p-1">11622</button>
-									<span class="question">Why is subtracting these two times (in 1927) giving a strange result?</span>
+							<!--post3-->
+							<div class="tags d-flex justify-content-between ps-3 pt-3 pb-2">
+								<div class="post d-flex">
+									<div>
+										<img src="images/green.jpg" alt="imagehere">
+									</div>
+									<div>
+										<button class="ms-2 p-1">11622</button>
+									</div>
+									<div class="question ps-2">
+										How do I call one constructor from another in Java
+									</div>
 								</div>
 								<div class="questiondate me-3">
-									<span>Jul 27,2021</span>
+									<span>Nov 12</span>
 								</div>
 							</div>
-							<!--post1-->
-							<div class="tags d-flex justify-content-between ps-3 py-2">
-								<div class="post">
-									<img src="images/green.jpg" alt="imagehere">
-									<button class="ms-2 p-1">11622</button>
-									<span class="question">Why is subtracting these two times (in 1927) giving a strange result?</span>
+							<!--post4-->
+							<div class="tags d-flex justify-content-between ps-3 pt-3 pb-2">
+								<div class="post d-flex">
+									<div>
+										<img src="images/green.jpg" alt="imagehere">
+									</div>
+									<div>
+										<button class="ms-2 p-1">4621</button>
+									</div>
+									<div class="question ps-2">
+										What are the correct version numbers for C#?
+									</div>
 								</div>
 								<div class="questiondate me-3">
-									<span>Jul 27,2021</span>
+									<span>Oct 29</span>
 								</div>
 							</div>
-							<!--post1-->
-							<div class="tags d-flex justify-content-between ps-3 py-2">
-								<div class="post">
-									<img src="images/green.jpg" alt="imagehere">
-									<button class="ms-2 p-1">11622</button>
-									<span class="question">Why is subtracting these two times (in 1927) giving a strange result?</span>
+							<!--post5-->
+							<div class="tags d-flex justify-content-between ps-3 pt-3 pb-2">
+								<div class="post d-flex">
+									<div>
+										<img src="images/greenq.jpg" alt="imagehere">
+									</div>
+									<div>
+										<button class="ms-2 p-1">3707</button>
+									</div>
+									<div class="question ps-2">
+										What are the correct version numbers for C#?
+									</div>
 								</div>
 								<div class="questiondate me-3">
-									<span>Jul 27,2021</span>
+									<span>Oct 18</span>
 								</div>
 							</div>
-							<!--post1-->
-							<div class="tags d-flex justify-content-between ps-3 py-2">
-								<div class="post">
-									<img src="images/green.jpg" alt="imagehere">
-									<button class="ms-2 p-1">11622</button>
-									<span class="question">Why is subtracting these two times (in 1927) giving a strange result?</span>
+							<!--post6-->
+							<div class="tags d-flex justify-content-between ps-3 pt-3 pb-2">
+								<div class="post d-flex">
+									<div>
+										<img src="images/gray.jpg" alt="imagehere">
+									</div>
+									<div>
+										<button class="ms-2 p-1">3707</button>
+									</div>
+									<div class="question ps-2">
+										How to break out of nested loops in java?
+									</div>
 								</div>
 								<div class="questiondate me-3">
-									<span>Jul 27,2021</span>
+									<span>May 20</span>
 								</div>
 							</div>
-							<!--post1-->
-							<div class="tags d-flex justify-content-between ps-3 py-2">
-								<div class="post">
-									<img src="images/green.jpg" alt="imagehere">
-									<button class="ms-2 p-1">11622</button>
-									<span class="question">Why is subtracting these two times (in 1927) giving a strange result?</span>
+							<!--post7-->
+							<div class="tags d-flex justify-content-between ps-3 pt-3 pb-2">
+								<div class="post d-flex">
+									<div>
+										<img src="images/green.jpg" alt="imagehere">
+									</div>
+									<div>
+										<button class="ms-2 p-1">11622</button>
+									</div>
+									<div class="question ps-2">
+										What is a serialVersionUID and why should I use it?
+									</div>
 								</div>
 								<div class="questiondate me-3">
-									<span>Jul 27,2021</span>
+									<span>Nov 12</span>
 								</div>
 							</div>
-							<!--post1-->
-							<div class="tags d-flex justify-content-between ps-3 py-2">
-								<div class="post">
-									<img src="images/green.jpg" alt="imagehere">
-									<button class="ms-2 p-1">11622</button>
-									<span class="question">Why is subtracting these two times (in 1927) giving a strange result?</span>
+							<!--post8-->
+							<div class="tags d-flex justify-content-between ps-3 pt-3 pb-2">
+								<div class="post d-flex">
+									<div>
+										<img src="images/green.jpg" alt="imagehere">
+									</div>
+									<div>
+										<button class="ms-2 p-1">4621</button>
+									</div>
+									<div class="question ps-2">
+										Difference between decimal, float and double in .NET?
+									</div>
 								</div>
 								<div class="questiondate me-3">
-									<span>Jul 27,2021</span>
+									<span>Mar 6</span>
 								</div>
 							</div>
-							<!--post1-->
-							<div class="tags d-flex justify-content-between ps-3 py-2">
-								<div class="post">
-									<img src="images/green.jpg" alt="imagehere">
-									<button class="ms-2 p-1">11622</button>
-									<span class="question">Why is subtracting these two times (in 1927) giving a strange result?</span>
+							<!--post9-->
+							<div class="tags d-flex justify-content-between ps-3 pt-3 pb-2">
+								<div class="post d-flex">
+									<div>
+										<img src="images/greenq.jpg" alt="imagehere">
+									</div>
+									<div>
+										<button class="ms-2 p-1">3707</button>
+									</div>
+									<div class="question ps-2">
+										Group bt LINQ
+									</div>
 								</div>
 								<div class="questiondate me-3">
-									<span>Jul 27,2021</span>
+									<span>Sep 6</span>
 								</div>
 							</div>
-							<!--post1-->
+							<!--post10-->							
 						</div>
-						<div class="badgeheadline d-flex justify-content-between">					
+						<div class="badgeheadline d-flex justify-content-between my-3">					
 							<span class="badgetitle">Top Meta posts</span>
 							<span class="meta">
 							<img src="images/q.jpg" alt="imagehere"><span>3</span>
@@ -652,98 +712,205 @@
 						</div>
 						<div class="tag container-fluid p-0 mx-0 my-2">
 							<div class="tags d-flex ps-3 pt-3 pb-2">
-								<div class="meta">
-									<img src="images/stackg.jpg" alt="imagehere">
-									<button class="ms-2 p-1">11622</button>
-									<span class="question">congradulations for reaching a million</span>
+								<div class="meta d-flex">
+									<div>
+										<img src="images/stackg.jpg" alt="imagehere">
+									</div>
+									<div>
+										<button class="ms-2 p-1">923</button>
+									</div>
+									<div class="question ps-2">Congratulations for reaching a million, Gordon Linoff!
+									</div>
 								</div>
 							</div>
 							<!--meta1-->
 							<div class="tags d-flex ps-3 pt-3 pb-2">
-								<div class="meta">
-									<img src="images/stackg.jpg" alt="imagehere">
-									<button class="ms-2 p-1">11622</button>
-									<span class="question">congradulations for reaching a million</span>
+								<div class="meta d-flex">
+									<div>
+										<img src="images/stackg.jpg" alt="imagehere">
+									</div>
+									<div>
+										<button class="ms-2 p-1">803</button>
+									</div>
+									<div class="question ps-2">Stack Overflow question checklist
+									</div>
 								</div>
 							</div>
 							<!--meta2-->
 							<div class="tags d-flex ps-3 pt-3 pb-2">
-								<div class="meta">
-									<img src="images/stackg.jpg" alt="imagehere">
-									<button class="ms-2 p-1">11622</button>
-									<span class="question">congradulations for reaching a million</span>
+								<div class="meta d-flex">
+									<div>
+										<img src="images/stackg.jpg" alt="imagehere">
+									</div>
+									<div>
+										<button class="ms-2 p-1">461</button>
+									</div>
+									<div class="question ps-2">Are we being "elitist"? Is there something wrong with that?
+									</div>
 								</div>
 							</div>
 							<!--meta3-->
 							<div class="tags d-flex ps-3 pt-3 pb-2">
-								<div class="meta">
-									<img src="images/stackg.jpg" alt="imagehere">
-									<button class="ms-2 p-1">11622</button>
-									<span class="question">congradulations for reaching a million</span>
+								<div class="meta d-flex">
+									<div>
+										<img src="images/stackg.jpg" alt="imagehere">
+									</div>
+									<div>
+										<button class="ms-2 p-1">204</button>
+									</div>
+									<div class="question ps-2">What should I do about a user that I'm trying to help and is calling me stupid
+									</div>
 								</div>
 							</div>
 							<!--meta4-->
 							<div class="tags d-flex ps-3 pt-3 pb-2">
-								<div class="meta">
-									<img src="images/stackg.jpg" alt="imagehere">
-									<button class="ms-2 p-1">11622</button>
-									<span class="question">congradulations for reaching a million</span>
+								<div class="meta d-flex">
+									<div>
+										<img src="images/stackg.jpg" alt="imagehere">
+									</div>
+									<div>
+										<button class="ms-2 p-1">166</button>
+									</div>
+									<div class="question ps-2">Who's the person with more answers than Jon Skeet? When will they catch him in rep terms?
+									</div>
 								</div>
 							</div>
-							<!--meta5-->
+							<!--meta5-->							
 						</div>
 						<!--Meta-->
-						<div class="badgeheadline d-flex justify-content-between">					
+						<div class="badgeheadline d-flex justify-content-between my-3">					
 							<span class="badgetitle">Top Network posts</span>
 							<span class="bronze"> View all network post</span>
 						</div>
 						<div class="tag container-fluid p-0 mx-0 my-2">
 							<div class="tags d-flex ps-3 pt-3 pb-2">
-								<div class="meta">
-									<img src="images/network1.jpg" alt="imagehere">
-									<button class="ms-2 p-1">11622</button>
-									<span class="question">congradulations for reaching a million</span>
+								<div class="meta d-flex">
+									<div>
+										<img src="images/network1.jpg" alt="imagehere">
+									</div>
+									<div>
+										<button class="ms-2 p-1">865</button>
+									</div>
+									<div class="question ps-2">Allow an edit to notify downvoters: "I think think I've fixed the issues 
+									</div>
 								</div>
 							</div>
-							<!--meta1-->
+							<!--network1-->
 							<div class="tags d-flex ps-3 pt-3 pb-2">
-								<div class="meta">
-									<img src="images/network1.jpg" alt="imagehere">
-									<button class="ms-2 p-1">11622</button>
-									<span class="question">congradulations for reaching a million</span>
+								<div class="meta d-flex">
+									<div>
+										<img src="images/network1.jpg" alt="imagehere">
+									</div>
+									<div>
+										<button class="ms-2 p-1">821</button>
+									</div>
+									<div class="question ps-2">Jon Skeet Facts
+									</div>
 								</div>
 							</div>
-							<!--meta1-->
+							<!--network2-->
 							<div class="tags d-flex ps-3 pt-3 pb-2">
-								<div class="meta">
-									<img src="images/network1.jpg" alt="imagehere">
-									<button class="ms-2 p-1">11622</button>
-									<span class="question">congradulations for reaching a million</span>
+								<div class="meta d-flex">
+									<div>
+										<img src="images/network1.jpg" alt="imagehere">
+									</div>
+									<div>
+										<button class="ms-2 p-1">297</button>
+									</div>
+									<div class="question ps-2">Should 'Hi', 'thanks', taglines, and salutations be removed from posts?
+									</div>
 								</div>
 							</div>
-							<!--meta1-->
+							<!--network3-->
 							<div class="tags d-flex ps-3 pt-3 pb-2">
-								<div class="meta">
-									<img src="images/network2.jpg" alt="imagehere">
-									<button class="ms-2 p-1">11622</button>
-									<span class="question">congradulations for reaching a million</span>
+								<div class="meta d-flex">
+									<div>
+										<img src="images/network2.jpg" alt="imagehere">
+									</div>
+									<div>
+										<button class="ms-2 p-1">264</button>
+									</div>
+									<div class="question ps-2">
+										Shell command to monitor changes in a file
+									</div>
 								</div>
 							</div>
-							<!--meta1-->
+							<!--network4-->
 							<div class="tags d-flex ps-3 pt-3 pb-2">
-								<div class="meta">
-									<img src="images/network1.jpg" alt="imagehere">
-									<button class="ms-2 p-1">11622</button>
-									<span class="question">congradulations for reaching a million</span>
+								<div class="meta d-flex">
+									<div>
+										<img src="images/network1.jpg" alt="imagehere">
+									</div>
+									<div>
+										<button class="ms-2 p-1">181</button>
+									</div>
+									<div class="question ps-2">Please show us when we lose an accepted answer
+									</div>
 								</div>
 							</div>
-							<!--meta1-->
+							<!--network5-->
 						</div>
-						<!--Meta-->
+						<!--Network-->
 					</div>
 					<!--AllBadges-->
 				</div>
 				<!--layer3-->
+				<div class="container-fluid d-sm-block my-2 d-md-block d-lg-none">
+					<div class="collective ms-1 mt-1 pt-3">
+						<span class="title">Collectives</span>
+						<div class="collectives mt-2 pt-2 pb-2 me-2">
+							<table>
+								<tbody>
+									<tr>
+										<td rowspan="2" class="cloud"><img src="images/cloud.jpg" alt="imagehere" class="mt-1 ms-2"></td>
+										<td class="google pt-2 ps-2">
+											Google Cloud
+											<p class="year">2021 <img src="images/dot.png" alt="imagehere">Employee</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<!--collective-->
+					<div class="community">
+						<div class="badgeheadline d-flex justify-content-between">					
+							<span class="badgetitle">Communities</span>
+							<span class="bronze view pt-2"> View all <img src="images/new.jpg" alt="imagehere"></span>
+						</div>
+						<div class="communitybox mt-2 pt-3 pe-3 pb-2">
+							<table>
+								<tr>
+									<td class="stackoverflow"><img src="images/so.jpg" alt="imagehere"> </td>
+									<td class="meta1">Stack Overflow</td>
+									<td class="meta2 ps-5">1.3m</td>
+								</tr>
+								<tr>
+									<td class="meta"><img src="images/meta.jpg" alt="imagehere"> </td>
+									<td class="meta1">Meta Stack Exchange</td>
+									<td class="meta2 ps-5">92.7k</td>
+								</tr>
+								<tr>
+									<td class="super"><img src="images/super.jpg" alt="imagehere"></td>
+									<td class="meta1"> Super User</td>
+									<td class="super2 ps-5">5.1k</td>
+								</tr>
+								<tr>
+									<td class="server"><img src="images/server.jpg" alt="imagehere"></td>
+									<td class="meta1">Server Fault</td>
+									<td class="meta2 ps-5">4.7k</td>
+								</tr>
+								<tr>
+									<td class="sw"><img src="images/sw.jpg" alt="imagehere"></td>
+									<td class="meta1">Software Engineering</td>
+									<td class="meta2 ps-5">3.4k</td>
+								</tr>
+							</table>
+						</div>
+						<!-- box-->
+					</div>
+					<!--community-->
+				</div>
 			</div>
 			<!--MAIN BODY CONTENT-->
 		</div>

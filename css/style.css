@@ -33,6 +33,10 @@ nav {
 	font-size: 13px;
 }
 
+.rightpart:hover {
+	background-color: #cfd6d6;
+}
+
 .data {
 	font-size: 12px;
 	font-weight: bold;
@@ -196,7 +200,7 @@ nav {
 	color: #6a737c;
 }
 
-.profile-button:hover {
+.profile-button button:hover {
 	background-color: #e3e6e8;
 	cursor: pointer;
 }
@@ -350,7 +354,7 @@ nav {
 	border-radius: 6px;
 }
 
-#cloud img {
+.cloud img {
 	width: 54px;
 }
 
@@ -359,17 +363,17 @@ nav {
 	color: #58483d;
 }
 
-#cloud:hover,
-#google:hover {
+.cloud:hover,
+.google:hover {
 	cursor: pointer;
 }
 
-#google p {
+.google p {
 	font-size: 12px;
 	color: #4b4045;
 }
 
-#google img {
+.google img {
 	width: 5px;
 	vertical-align: baseline;
 }
@@ -425,47 +429,36 @@ nav {
 	border-radius: 5px;
 }
 
-#meta img {
+.meta img {
 	width: 22px;
 }
 
-#server img {
+.server img {
 	width: 29px;
 }
 
-#super img {
+.super img {
 	width: 25px;
 }
 
-#stackoverflow img {
+.stackoverflow img {
 	width: 23px;
 }
 
-#sw img {
+.sw img {
 	width: 26px;
 }
 
-#stackoverflow2,
-#meta2,
-#super2,
-#server2,
-#sw2 {
+.meta2 {
 	color: #7a8b94;
 }
 
-#stackoverflow1,
-#meta1,
-#super1,
-#server1,
-#sw1 {
+.meta1 {
 	color: #4886ce;
+	white-space: nowrap;
 }
 
-#stackoverflow1:hover,
-#meta1:hover,
-#super1:hover,
-#server1:hover,
-#sw1:hover {
+.meta1:hover {
 	color: #84aede;
 }
 
@@ -624,10 +617,14 @@ nav {
 	font-size: 12px;
 }
 
-.meta .question,
-.post .question {
+.question {
 	font-size: 15px;
 	color: #178cda;
+}
+
+.question:hover {
+	color: #2dc7e3;
+	cursor: pointer;
 }
 
 .meta span {
@@ -677,6 +674,7 @@ nav {
 	color: #babfc4;
 	cursor: pointer;
 }
+
 .subhead {
 	font-size: 13px;
 	color: #808b93;
@@ -698,6 +696,7 @@ nav {
 .foot-column3 a {
 	text-decoration: none;
 	color: #94999d;
+	padding-right: 5px;
 }
 
 .license {
