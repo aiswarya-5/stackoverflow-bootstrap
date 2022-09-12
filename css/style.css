@@ -13,7 +13,11 @@ nav {
 	font-size: 13px;
 	color: #7d8388;
 }
-
+.navproduct:hover{
+    cursor: pointer;
+    background-color: #cfd6d6;
+    border-radius: 50px;
+}
 .search {
 	top: 10px;
 	width: 26px;
@@ -24,7 +28,7 @@ nav {
 }
 
 #stacks {
-	width: 50px;
+	width: 60px;
 	border: none;
 }
 
@@ -59,16 +63,15 @@ nav {
 	width: 38.5px;
 }
 
-.list,
-.help {
+.list,.help {
 	width: 37px;
 }
 
 .sidebar {
-	/*  sidebar   */
 	border-right: 1px solid #e0e2e5;
 	height: 540px;
-	top: 0;
+	position:sticky;
+	top: 50px;
 }
 
 .sidebar .home {
@@ -87,8 +90,7 @@ nav {
 	color: #8a9198;
 }
 
-.sidebar .options ul,
-.sidebar .option ul {
+.sidebar .options ul,.sidebar .option ul {
 	list-style-type: none;
 }
 

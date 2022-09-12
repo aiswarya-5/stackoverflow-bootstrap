@@ -12,10 +12,13 @@
 	<body>
 		<nav class="navbar navbar-expand-lg fixed-top bg-light navbar-light py-0">
 			<div class="container-fluid ps-0 ">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      					<span class="navbar-toggler-icon"></span>
+    				</button>
 				<a class="navbar-brand py-0 navbar-brand py-0 me-0" href="#">
 				<img class="collapse navbar-collapse" id="stack" src="images/stack.jpg" alt="ImageHere">
 				<img class="navbar-toggler" data-bs-toggle="collapse" id="stacks" src="images/stacktop.JPG" alt="ImageHere"></a>
-				<a class="navbar-brand pt-0 me-0" href="#"><span class="product mx-2">Products</span></a>
+				<a class="navbar-brand navproduct pt-0 me-0" href="#"><span class="product mx-2">Products</span></a>
 				<div class="form-group col-lg-7 col-md-5 col-sm-2 col-1">
 					<span class="material-icons position-absolute opacity-50 m-1">search</span>
 					<input type="text" class="form-control input-sm"  value="user:22656">
@@ -34,7 +37,7 @@
 			<!-- container-fluid -->
 		</nav>
 		<div class="mainbody container-fluid d-flex mt-5">
-			<div class="sidebar d-none d-sm-none d-md-block sticky-top pt-3 mt-2">
+			<div class="sidebar d-none d-sm-none d-md-block pt-3 mt-2">
 				<p class="home pt-2 ps-2">Home</p>
 				<p class="public pt-2 ps-2 mb-0">PUBLIC</p>
 				<div class="options mt-2">
@@ -118,31 +121,33 @@
 					<button class="profilebut">Profile</button>
 					<button class="activitybut">Activity</button>
 				</div>
-				<div class="layer2 mt-3 ms-2 d-md-flex d-sm-block">
+				<div class="layer2 mt-3 ms-2 d-lg-flex d-md-block d-sm-block">
 					<div class="sublayer1">
 						<div class="status">
 							<span class="title">Stats</span>
 							<div class="container ms-sm-0 ps-0 mt-3">
 								<div class="card">
-									<div class="status p-md-0 p-lg-1 me-5 card-body d-sm-flex d-md-block">
-										<div class="d-flex">
-											<div class="m-2">
-												<span>1,353,992</span>
-												<div class="rep">reputation</div>
+									<div class="status p-md-0 p-lg-1 me-5 card-body d-block d-lg-block d-md-flex d-block">
+										<div class=" d-block d-lg-block d-md-flex d-inline-flex">
+											<div class="d-flex">
+												<div class="m-2">
+													<span>1,353,992</span>
+													<div class="rep">reputation</div>
+												</div>
+												<div class="m-2 ms-lg-5">
+													<span>362.1m</span>
+													<div class="rep">reached</div>
+												</div>
 											</div>
-											<div class="m-2 ms-lg-5">
-												<span>362.1m</span>
-												<div class="rep">reached</div>
-											</div>
-										</div>
-										<div class="d-flex">
-											<div class="m-2">
-												<span>35,451</span>
-												<div class="rep">answers</div>
-											</div>
-											<div class="m-2 ms-lg-5 ps-lg-4">
-												<span>51</span>
-												<div class="rep">question</div>
+											<div class="d-flex">
+												<div class="m-2">
+													<span>35,451</span>
+													<div class="rep">answers</div>
+												</div>
+												<div class="m-2 ms-lg-5 ps-lg-4">
+													<span>51</span>
+													<div class="rep">question</div>
+												</div>
 											</div>
 										</div>
 										<div class="d-flex">
@@ -159,7 +164,7 @@
 							<!--container-->
 						</div>
 						<!--status-->
-						<div class="collective ms-1 d-sm-none d-md-none d-lg-block mt-1 pt-3">
+						<div class="collective ms-1 d-none d-sm-none d-md-none d-lg-block mt-1 pt-3">
 							<span class="title">Collectives</span>
 							<div class="collectives mt-2 pt-2 pb-2 me-2">
 								<table>
@@ -242,7 +247,7 @@
 							<span class="bronze"> View all badges</span>
 						</div>
 						<div class="badgeboxs row my-2">
-							<div class="badges col ms-lg-4">
+							<div class="badges col col-xl-4 col-lg-5">
 								<div class="badgedatas py-2 ps-2">
 									<table class="table1">
 										<tr>
@@ -286,7 +291,7 @@
 								<!--badgesdatas-->
 							</div>
 							<!--badges-->	
-							<div class="badges col ms-lg-4">
+							<div class="badges col col-xl-4 col-lg-5">
 								<div class="silver py-2 ps-2">
 									<table class="table1">
 										<tr>
@@ -332,7 +337,7 @@
 								<!--badgesdatas-->
 							</div>
 							<!--badges-->
-							<div class="badges col ms-lg-4">
+							<div class="badges col col-xl-4 col-lg-5">
 								<div class="bronzedata py-2 ps-2">
 									<table class="table1">
 										<tr>
@@ -920,47 +925,202 @@
 				<div class="footimage d-none d-sm-none d-md-block">
 					<img src="images/fstack.jpg" alt="imagehere">
 				</div>
-				<div class="foot-middle d-flex justify-content-evently m-3">
+				<div class="foot-middle d-block d-sm-block d-md-flex d-lg-flex justify-content-evently m-0 m-sm-0 m-md-3">
+					<div class="foot-column">
+						<h5 class="head pb-2 mt-3 pb-mt-3 mt-md-0 ">STACK OVERFLOW</h5>
+						<div class="d-sm-flex d-flex d-md-block">
+							<div class="subhead pb-1">Questions</div>
+							<div class="subhead pb-1 pe-3 pe-md-0 ps-se-0">Help</div>
+						</div>
+					</div>
+					<div class="foot-column">
+						<h5 class="head pb-2 mt-3 pb-mt-3 mt-md-0 ">PRODUCTS</h5>
+						<div class="d-sm-flex d-flex d-md-block"">
+							<div class="subhead pb-1 pe-3 pe-md-0 ps-se-0">Teams</div>
+							<div class="subhead pb-1 pe-3 pe-md-0 ps-se-0">Advertising</div>
+							<div class="subhead pb-1 pe-3 pe-md-0 ps-se-0">Collectives</div>
+							<div class="subhead pb-1 ">Talent</div>
+						</div>
+					</div>
+					<div class="foot-column">
+						<h5 class="head pb-2 mt-3 pb-mt-3 mt-md-0 ">COMPANY</h5>
+						<div class="d-block ps-0">
+							<div class="d-sm-flex d-flex d-md-block flex-wrap justify-content-space-between">
+								<div class="subhead pb-1 pe-3 pe-md-0 ps-se-0">About</div>
+								<div class="subhead pb-1 pe-3 pe-md-0 ps-se-0 ">Press</div>
+								<div class="subhead pb-1 pe-3 pe-md-0 ps-se-0">Work Here</div>
+								<div class="subhead pb-1 pe-3 pe-md-0 ps-se-0">Legal</div>
+								<div class="subhead pb-1 pe-3 pe-md-0 ps-se-0">Privacy Policy</div>
+								<div class="subhead pb-1 pe-3 pe-md-0 ps-se-0">Terms of Service</div>
+								<div class="subhead pb-1 pe-3 pe-md-0 ps-se-0">Contact Us</div>
+								<div class="subhead pb-1 pe-3 pe-md-0 ps-se-0">Cookie Settings</div>
+								<div class="subhead pb-1">Cookie Policy</div>
+							</div>
+						</div>
+					</div>
+					<div class="foot-column">
+						<h5 class="head pb-2 mt-3 pb-mt-3 mt-md-0 ">STACK EXCHANGE NETWORK</h5>
+						<div class="d-block ps-0">
+							<div class="d-sm-flex d-flex d-md-block flex-wrap justify-content-space-between">
+								<div class="subhead pb-1 pe-3 pe-md-0 ps-se-0">Technology</div>
+								<div class="subhead pb-1 pe-3 pe-md-0 ps-se-0">Culture & recreation</div>
+								<div class="subhead pb-1 pe-3 pe-md-0 ps-se-0">Life & arts</div>
+								<div class="subhead pb-1 pe-3 pe-md-0 ps-se-0">Science</div>
+								<div class="subhead pb-1 pe-3 pe-md-0 ps-se-0">Science</div>
+								<div class="subhead pb-1 pe-3 pe-md-0 ps-se-0">Professional</div>
+								<div class="subhead pb-0 pb-sm-0 pb-md-3 pe-3 pe-md-0 ps-se-0">Business</div>
+								<div class="subhead pb-1 pe-3 pe-md-0 ps-se-0">API</div>
+								<div class="subhead pb-1 pe-3 pe-md-0 ps-se-0">Data </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mt-4 pt-1">
+					<div class="foot-column3 mb-lg-5 pb-mb-5 pb-lg-5">
+						<a href="#">Blog</a>
+						<a href="#">Facebook</a>
+						<a href="#">Twitter</a>
+						<a href="#">LinkedIn</a>
+						<a href="#">Instagram</a>
+					</div>
+					<div class="license mt-mb-5 pt-mb-5 pt-lg-5 mt-lg-5">
+						Site design / logo © 2022 Stack Exchange Inc; user contributions 
+						<p> licensed under cc by-sa. rev 2022.7.1.42502 </p>
+					</div>
+				</div>
+			</div>
+		</div>
+<!--
+
+
+<div class="foot_container container-fluid">
+			<div class="footer d-lg-flex d-md-block pt-3">
+				<div class="footimage d-none d-sm-none d-md-block">
+					<img src="images/fstack.jpg" alt="imagehere">
+				</div>
+				<div class="foot-middle d-block d-sm-block d-md-flex d-lg-flex justify-content-evently m-0 m-sm-0 m-md-3">
+					<div class="foot-column">
+						<h5 class="head pb-2 mt-3 pb-mt-3 mt-md-0 ">STACK OVERFLOW</h5>
+						<div class="d-sm-flex d-flex d-md-block">
+							<div class="subhead pb-1">Questions</div>
+							<div class="subhead pb-1 ps-3 ps-md-0 ps-sm-3">Help</div>
+						</div>
+					</div>
+					<div class="foot-column">
+						<h5 class="head pb-2 mt-3 pb-mt-3 mt-md-0 ">PRODUCTS</h5>
+						<div class="d-sm-flex d-flex d-md-block"">
+							<div class="subhead pb-1">Teams</div>
+							<div class="subhead pb-1 ps-3 ps-md-0 ps-sm-3">Advertising</div>
+							<div class="subhead pb-1 ps-3 ps-md-0 ps-sm-3">Collectives</div>
+							<div class="subhead pb-1 ps-3 ps-md-0 ps-sm-3">Talent</div>
+						</div>
+					</div>
+					<div class="foot-column">
+						<h5 class="head pb-2 mt-3 pb-mt-3 mt-md-0 ">COMPANY</h5>
+						<div class="d-block ps-0">
+							<div class="d-sm-flex d-flex d-md-block">
+								<div class="subhead pb-1">About</div>
+								<div class="subhead pb-1 ps-3 ps-md-0 ps-sm-3 ">Press</div>
+								<div class="subhead pb-1  ps-3 ps-md-0 ps-sm-3">Work Here</div>
+								<div class="subhead pb-1  ps-3 ps-md-0 ps-sm-3">Legal</div>
+							</div>
+							<div class="d-sm-flex d-flex d-md-block">
+								<div class="subhead pb-1 ">Privacy Policy</div>
+								<div class="subhead pb-1 ps-3 ps-md-0 ps-sm-3">Terms of Service</div>
+								<div class="subhead pb-1  ps-3 ps-md-0 ps-sm-3">Contact Us</div>
+							</div>
+							<div class="d-sm-flex d-flex d-md-block">
+								<div class="subhead pb-1">Cookie Settings</div>
+								<div class="subhead pb-1  ps-3 ps-md-0 ps-sm-3">Cookie Policy</div>
+							</div>
+						</div>
+					</div>
+					<div class="foot-column">
+						<h5 class="head pb-2 mt-3 pb-mt-3 mt-md-0 ">STACK EXCHANGE NETWORK</h5>
+						<div class="d-block ps-0">
+							<div class="d-sm-flex d-flex d-md-block">
+								<div class="subhead pb-1">Technology</div>
+								<div class="subhead pb-1 ps-3 ps-md-0 ps-sm-3 ">Culture & recreation</div>
+								<div class="subhead pb-1 ps-3 ps-md-0 ps-sm-3">Life & arts</div>
+							</div>
+							<div class="d-sm-flex d-flex d-md-block">
+								<div class="subhead pb-1 ">Science</div>
+								<div class="subhead pb-1 ps-3 ps-md-0 ps-sm-3">Science</div>
+								<div class="subhead pb-1 ps-3 ps-md-0 ps-sm-3">Professional</div>
+								<div class="subhead pb-0 pb-sm-0 pb-md-3 ps-3 ps-md-0 ps-sm-3">Business</div>
+							</div> 
+							<div class="d-sm-flex d-flex d-md-block">
+								<div class="subhead pb-1">API</div>
+								<div class="subhead pb-1 ps-3 ps-md-0 ps-sm-3">Data </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mt-4 pt-1">
+					<div class="foot-column3 mb-lg-5 pb-mb-5 pb-lg-5">
+						<a href="#">Blog</a>
+						<a href="#">Facebook</a>
+						<a href="#">Twitter</a>
+						<a href="#">LinkedIn</a>
+						<a href="#">Instagram</a>
+					</div>
+					<div class="license mt-mb-5 pt-mb-5 pt-lg-5 mt-lg-5">
+						Site design / logo © 2022 Stack Exchange Inc; user contributions 
+						<p> licensed under cc by-sa. rev 2022.7.1.42502 </p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<div class="foot_container container-fluid">
+			<div class="footer d-lg-flex d-md-block pt-3">
+				<div class="footimage d-none d-sm-none d-md-block">
+					<img src="images/fstack.jpg" alt="imagehere">
+				</div>
+				<div class="foot-middle d-block d-sm-block d-md-flex d-lg-flex justify-content-evently m-0 m-sm-0 m-md-3">
 					<div class="foot-column">
 						<h5 class="head pb-2">STACK OVERFLOW</h5>
-						<ul class="ps-0">
+						<ul class="d-sm-flex d-md-blockd-lg-block d-flex ps-0">
 							<li class="subhead pb-1">Questions</li>
-							<li class="subhead pb-1">Help</li>
+							<li class="subhead pb-1 ps-3 ps-md-0 ps-sm-3">Help</li>
 						</ul>
 					</div>
 					<div class="foot-column">
 						<h5 class="head pb-2">PRODUCTS</h5>
-						<ul class="ps-0">
+						<ul class="d-sm-flex d-md-block d-lg-block d-flex ps-0">
 							<li class="subhead pb-1">Teams</li>
-							<li class="subhead pb-1">Advertising</li>
-							<li class="subhead pb-1">Collectives</li>
-							<li class="subhead pb-1">Talent</li>
+							<li class="subhead pb-1 ps-3 ps-md-0 ps-sm-3">Advertising</li>
+							<li class="subhead pb-1 ps-3 ps-md-0 ps-sm-3">Collectives</li>
+							<li class="subhead pb-1 ps-3 ps-md-0 ps-sm-3">Talent</li>
 						</ul>
 					</div>
 					<div class="foot-column">
 						<h5 class="head pb-2">COMPANY</h5>
-						<ul class="ps-0">
+						<ul class="d-sm-flex d-md-block d-lg-block d-flex ps-0">
 							<li class="subhead pb-1">About</li>
-							<li class="subhead pb-1">Press</li>
-							<li class="subhead pb-1">Work Here</li>
-							<li class="subhead pb-1">Legal</li>
-							<li class="subhead pb-1">Privacy Policy</li>
-							<li class="subhead pb-1">Terms of Service</li>
-							<li class="subhead pb-1">Contact Us</li>
-							<li class="subhead pb-1">Cookie Settings</li>
-							<li class="subhead pb-1">Cookie Policy</li>
+							<li class="subhead pb-1 ">Press</li>
+							<li class="subhead pb-1 ">Work Here</li>
+							<li class="subhead pb-1 ">Legal</li>
+							<li class="subhead pb-1 ">Privacy Policy</li>
+							<li class="subhead pb-1 ">Terms of Service</li>
+							<li class="subhead pb-1 ">Contact Us</li>
+							<li class="subhead pb-1 ">Cookie Settings</li>
+							<li class="subhead pb-1 ">Cookie Policy</li>
 						</ul>
 					</div>
 					<div class="foot-column">
 						<h5 class="head pb-2">STACK EXCHANGE NETWORK</h5>
-						<ul class="ps-0">
+						<ul class="d-sm-flex d-md-block d-lg-block d-flex ps-0">
 							<li class="subhead pb-1">Technology</li>
-							<li class="subhead pb-1">Culture & recreation</li>
+							<li class="subhead pb-1 ">Culture & recreation</li>
 							<li class="subhead pb-1">Life & arts</li>
 							<li class="subhead pb-1">Science</li>
 							<li class="subhead pb-1">Professional</li>
 							<li class="subhead pb-3">Business</li>
-							<li class="subhead pb-1">API</li>
+							<li class="subhead pb-1 ">API</li>
 							<li class="subhead pb-1">Data</li>
 						</ul>
 					</div>
@@ -980,5 +1140,6 @@
 				</div>
 			</div>
 		</div>
+-->
 	</body>
 </html>
