@@ -12,9 +12,10 @@
 	<body>
 		<nav class="navbar navbar-expand-lg fixed-top bg-light navbar-light py-0">
 			<div class="container-fluid ps-0 ">
+				<!--
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
       					<span class="navbar-toggler-icon"></span>
-    				</button>
+    				</button> -->
 				<a class="navbar-brand py-0 navbar-brand py-0 me-0" href="#">
 				<img class="collapse navbar-collapse" id="stack" src="images/stack.jpg" alt="ImageHere">
 				<img class="navbar-toggler" data-bs-toggle="collapse" id="stacks" src="images/stacktop.JPG" alt="ImageHere"></a>
@@ -32,7 +33,7 @@
 				<a class="navbar-brand py-0 ms-2 me-0" href="#"><img src="images/index.jpg" alt="ImageHere"></a>
 				<a class="navbar-brand py-0 me-0" href="#"><img class="trophy" src="images/trophy.jpg" alt="ImageHere"></a>
 				<a class="navbar-brand py-0 me-1" href="#"><img class="help" src="images/help.jpg" alt="ImageHere"></a>
-				<a class="navbar-brand py-0 me-1" href="#"><img class="list" src="images/list.jpg" alt="ImageHere"></a>  
+				<a class="navbar-brand py-0 me-1 d-sm-none d-none d-md-flex" href="#"><img class="list" src="images/list.jpg" alt="ImageHere"></a>  
 			</div>
 			<!-- container-fluid -->
 		</nav>
@@ -173,8 +174,10 @@
 											<td rowspan="2" class="cloud"><img src="images/cloud.jpg" alt="imagehere" class="mt-1 ms-2"></td>
 											<td class="google pt-2 ps-2">
 												Google Cloud
-												<p class="year">2021 <img src="images/dot.png" alt="imagehere">Employee</p>
 											</td>
+										</tr>
+										<tr>
+											<td class="year google">2021 <img src="images/dot.png" alt="imagehere">Employee</td>
 										</tr>
 									</tbody>
 								</table>
@@ -251,7 +254,7 @@
 								<div class="badgedatas py-2 ps-2">
 									<table class="table1">
 										<tr>
-											<td rowspan="2" colspan="2"><img src="images/gold.jpg" alt="imagehere" id="goldimg"></td>
+											<td rowspan="2"><img src="images/gold.jpg" alt="imagehere" id="goldimg"></td>
 											<td id="num-g" class="pt-1">824</td>
 										</tr>
 										<tr>
@@ -295,7 +298,7 @@
 								<div class="silver py-2 ps-2">
 									<table class="table1">
 										<tr>
-											<td rowspan="2" colspan="2">
+											<td rowspan="2">
 												<img src="images/silver.jpg" id="silverimg" alt="imagehere">
 											</td>
 											<td id="num-s" class="pt-1">8,939</td>
@@ -341,7 +344,7 @@
 								<div class="bronzedata py-2 ps-2">
 									<table class="table1">
 										<tr>
-											<td rowspan="2" colspan="2">
+											<td rowspan="2">
 												<img src="images/bronze.jpg" alt="imagehere" id="bronzeimg">
 											</td>
 											<td id="num-b" class="pt-1">8,939</td>
@@ -863,15 +866,17 @@
 				<div class="container-fluid d-sm-block my-2 d-md-block d-lg-none">
 					<div class="collective ms-1 mt-1 pt-3">
 						<span class="title">Collectives</span>
-						<div class="collectives mt-2 pt-2 pb-2 me-2">
+						<div class="collectives mt-2 pt-2 pb-2 me-2">							
 							<table>
 								<tbody>
 									<tr>
 										<td rowspan="2" class="cloud"><img src="images/cloud.jpg" alt="imagehere" class="mt-1 ms-2"></td>
 										<td class="google pt-2 ps-2">
-											Google Cloud
-											<p class="year">2021 <img src="images/dot.png" alt="imagehere">Employee</p>
+												Google Cloud
 										</td>
+									</tr>
+									<tr>
+										<td class="year google">2021 <img src="images/dot.png" alt="imagehere">Employee</td>
 									</tr>
 								</tbody>
 							</table>
@@ -935,7 +940,7 @@
 					</div>
 					<div class="foot-column">
 						<h5 class="head pb-2 mt-3 pb-mt-3 mt-md-0 ">PRODUCTS</h5>
-						<div class="d-sm-flex d-flex d-md-block"">
+						<div class="d-sm-flex d-flex d-md-block">
 							<div class="subhead pb-1 pe-3 pe-md-0 ps-se-0">Teams</div>
 							<div class="subhead pb-1 pe-3 pe-md-0 ps-se-0">Advertising</div>
 							<div class="subhead pb-1 pe-3 pe-md-0 ps-se-0">Collectives</div>
@@ -990,156 +995,6 @@
 				</div>
 			</div>
 		</div>
-<!--
 
-
-<div class="foot_container container-fluid">
-			<div class="footer d-lg-flex d-md-block pt-3">
-				<div class="footimage d-none d-sm-none d-md-block">
-					<img src="images/fstack.jpg" alt="imagehere">
-				</div>
-				<div class="foot-middle d-block d-sm-block d-md-flex d-lg-flex justify-content-evently m-0 m-sm-0 m-md-3">
-					<div class="foot-column">
-						<h5 class="head pb-2 mt-3 pb-mt-3 mt-md-0 ">STACK OVERFLOW</h5>
-						<div class="d-sm-flex d-flex d-md-block">
-							<div class="subhead pb-1">Questions</div>
-							<div class="subhead pb-1 ps-3 ps-md-0 ps-sm-3">Help</div>
-						</div>
-					</div>
-					<div class="foot-column">
-						<h5 class="head pb-2 mt-3 pb-mt-3 mt-md-0 ">PRODUCTS</h5>
-						<div class="d-sm-flex d-flex d-md-block"">
-							<div class="subhead pb-1">Teams</div>
-							<div class="subhead pb-1 ps-3 ps-md-0 ps-sm-3">Advertising</div>
-							<div class="subhead pb-1 ps-3 ps-md-0 ps-sm-3">Collectives</div>
-							<div class="subhead pb-1 ps-3 ps-md-0 ps-sm-3">Talent</div>
-						</div>
-					</div>
-					<div class="foot-column">
-						<h5 class="head pb-2 mt-3 pb-mt-3 mt-md-0 ">COMPANY</h5>
-						<div class="d-block ps-0">
-							<div class="d-sm-flex d-flex d-md-block">
-								<div class="subhead pb-1">About</div>
-								<div class="subhead pb-1 ps-3 ps-md-0 ps-sm-3 ">Press</div>
-								<div class="subhead pb-1  ps-3 ps-md-0 ps-sm-3">Work Here</div>
-								<div class="subhead pb-1  ps-3 ps-md-0 ps-sm-3">Legal</div>
-							</div>
-							<div class="d-sm-flex d-flex d-md-block">
-								<div class="subhead pb-1 ">Privacy Policy</div>
-								<div class="subhead pb-1 ps-3 ps-md-0 ps-sm-3">Terms of Service</div>
-								<div class="subhead pb-1  ps-3 ps-md-0 ps-sm-3">Contact Us</div>
-							</div>
-							<div class="d-sm-flex d-flex d-md-block">
-								<div class="subhead pb-1">Cookie Settings</div>
-								<div class="subhead pb-1  ps-3 ps-md-0 ps-sm-3">Cookie Policy</div>
-							</div>
-						</div>
-					</div>
-					<div class="foot-column">
-						<h5 class="head pb-2 mt-3 pb-mt-3 mt-md-0 ">STACK EXCHANGE NETWORK</h5>
-						<div class="d-block ps-0">
-							<div class="d-sm-flex d-flex d-md-block">
-								<div class="subhead pb-1">Technology</div>
-								<div class="subhead pb-1 ps-3 ps-md-0 ps-sm-3 ">Culture & recreation</div>
-								<div class="subhead pb-1 ps-3 ps-md-0 ps-sm-3">Life & arts</div>
-							</div>
-							<div class="d-sm-flex d-flex d-md-block">
-								<div class="subhead pb-1 ">Science</div>
-								<div class="subhead pb-1 ps-3 ps-md-0 ps-sm-3">Science</div>
-								<div class="subhead pb-1 ps-3 ps-md-0 ps-sm-3">Professional</div>
-								<div class="subhead pb-0 pb-sm-0 pb-md-3 ps-3 ps-md-0 ps-sm-3">Business</div>
-							</div> 
-							<div class="d-sm-flex d-flex d-md-block">
-								<div class="subhead pb-1">API</div>
-								<div class="subhead pb-1 ps-3 ps-md-0 ps-sm-3">Data </div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="mt-4 pt-1">
-					<div class="foot-column3 mb-lg-5 pb-mb-5 pb-lg-5">
-						<a href="#">Blog</a>
-						<a href="#">Facebook</a>
-						<a href="#">Twitter</a>
-						<a href="#">LinkedIn</a>
-						<a href="#">Instagram</a>
-					</div>
-					<div class="license mt-mb-5 pt-mb-5 pt-lg-5 mt-lg-5">
-						Site design / logo © 2022 Stack Exchange Inc; user contributions 
-						<p> licensed under cc by-sa. rev 2022.7.1.42502 </p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-
-
-		<div class="foot_container container-fluid">
-			<div class="footer d-lg-flex d-md-block pt-3">
-				<div class="footimage d-none d-sm-none d-md-block">
-					<img src="images/fstack.jpg" alt="imagehere">
-				</div>
-				<div class="foot-middle d-block d-sm-block d-md-flex d-lg-flex justify-content-evently m-0 m-sm-0 m-md-3">
-					<div class="foot-column">
-						<h5 class="head pb-2">STACK OVERFLOW</h5>
-						<ul class="d-sm-flex d-md-blockd-lg-block d-flex ps-0">
-							<li class="subhead pb-1">Questions</li>
-							<li class="subhead pb-1 ps-3 ps-md-0 ps-sm-3">Help</li>
-						</ul>
-					</div>
-					<div class="foot-column">
-						<h5 class="head pb-2">PRODUCTS</h5>
-						<ul class="d-sm-flex d-md-block d-lg-block d-flex ps-0">
-							<li class="subhead pb-1">Teams</li>
-							<li class="subhead pb-1 ps-3 ps-md-0 ps-sm-3">Advertising</li>
-							<li class="subhead pb-1 ps-3 ps-md-0 ps-sm-3">Collectives</li>
-							<li class="subhead pb-1 ps-3 ps-md-0 ps-sm-3">Talent</li>
-						</ul>
-					</div>
-					<div class="foot-column">
-						<h5 class="head pb-2">COMPANY</h5>
-						<ul class="d-sm-flex d-md-block d-lg-block d-flex ps-0">
-							<li class="subhead pb-1">About</li>
-							<li class="subhead pb-1 ">Press</li>
-							<li class="subhead pb-1 ">Work Here</li>
-							<li class="subhead pb-1 ">Legal</li>
-							<li class="subhead pb-1 ">Privacy Policy</li>
-							<li class="subhead pb-1 ">Terms of Service</li>
-							<li class="subhead pb-1 ">Contact Us</li>
-							<li class="subhead pb-1 ">Cookie Settings</li>
-							<li class="subhead pb-1 ">Cookie Policy</li>
-						</ul>
-					</div>
-					<div class="foot-column">
-						<h5 class="head pb-2">STACK EXCHANGE NETWORK</h5>
-						<ul class="d-sm-flex d-md-block d-lg-block d-flex ps-0">
-							<li class="subhead pb-1">Technology</li>
-							<li class="subhead pb-1 ">Culture & recreation</li>
-							<li class="subhead pb-1">Life & arts</li>
-							<li class="subhead pb-1">Science</li>
-							<li class="subhead pb-1">Professional</li>
-							<li class="subhead pb-3">Business</li>
-							<li class="subhead pb-1 ">API</li>
-							<li class="subhead pb-1">Data</li>
-						</ul>
-					</div>
-				</div>
-				<div class="mt-4 pt-1">
-					<div class="foot-column3 mb-lg-5 pb-mb-5 pb-lg-5">
-						<a href="#">Blog</a>
-						<a href="#">Facebook</a>
-						<a href="#">Twitter</a>
-						<a href="#">LinkedIn</a>
-						<a href="#">Instagram</a>
-					</div>
-					<div class="license mt-mb-5 pt-mb-5 pt-lg-5 mt-lg-5">
-						Site design / logo © 2022 Stack Exchange Inc; user contributions 
-						<p> licensed under cc by-sa. rev 2022.7.1.42502 </p>
-					</div>
-				</div>
-			</div>
-		</div>
--->
 	</body>
 </html>
